@@ -3,15 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Zhuangjian&#39;s Blog</title>
+  <title>关于我 | Zhuangjian&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhuangjian&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一个普通人 热爱技术 对技术充满偏执 对生活充满偏执，且不在具有热情  渴望世界和平，也期望宇宙泯灭 向死而生，生不为己  mail：941628696@qq.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我">
+<meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="Zhuangjian&#39;s Blog">
+<meta property="og:description" content="一个普通人 热爱技术 对技术充满偏执 对生活充满偏执，且不在具有热情  渴望世界和平，也期望宇宙泯灭 向死而生，生不为己  mail：941628696@qq.com">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-05T06:37:26.851Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhuangjian&#39;s Blog">
+<meta name="twitter:title" content="关于我">
+<meta name="twitter:description" content="一个普通人 热爱技术 对技术充满偏执 对生活充满偏执，且不在具有热情  渴望世界和平，也期望宇宙泯灭 向死而生，生不为己  mail：941628696@qq.com">
   
     <link rel="alternate" href="/atom.xml" title="Zhuangjian&#39;s Blog" type="application/atom+xml">
   
@@ -64,12 +68,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-post" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/12/05/post/" class="article-date">
-  <time datetime="2018-12-05T06:09:27.000Z" itemprop="datePublished">2018-12-05</time>
+    <a href="/about/index.html" class="article-date">
+  <time datetime="2018-12-05T06:28:47.000Z" itemprop="datePublished">2018-12-05</time>
 </a>
     
   </div>
@@ -79,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/05/post/">凛冬将至，希望能发光温暖世界</a>
+    <h1 class="article-title" itemprop="name">
+      关于我
     </h1>
   
 
@@ -90,24 +92,80 @@
       
         <!-- Table of Contents -->
         
-        <h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><p>从今天起，要好好做一个社会废人<br>做一个积极地社会废人<br>…<br>…<br>…<br>积极地褥羊毛，打撸撸</p>
+        <h2 id="一个普通人"><a href="#一个普通人" class="headerlink" title="一个普通人"></a>一个普通人</h2><p> 热爱技术<br> 对技术充满偏执<br> 对生活充满偏执，且不在具有热情</p>
+<p> 渴望世界和平，也期望宇宙泯灭<br> 向死而生，生不为己</p>
+<p> mail：<a href="mailto:941628696@qq.com" target="_blank" rel="noopener">941628696@qq.com</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/05/post/" data-id="cjpate2840002d8uush59ml2x" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/about/index.html" data-id="cjpate27u0001d8uu94hakpun" class="article-share-link">分享</a>
       
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/第一天-首发/">第一天 首发</a></li></ul>
-
     </footer>
   </div>
   
+    
+ <script src="/jquery/jquery.min.js"></script>
+  <div id="random_posts">
+    <h2>推荐文章</h2>
+    <div class="random_posts_ul">
+      <script>
+          var random_count =4
+          var site = {BASE_URI:'/'};
+          function load_random_posts(obj) {
+              var arr=site.posts;
+              if (!obj) return;
+              // var count = $(obj).attr('data-count') || 6;
+              for (var i, tmp, n = arr.length; n; i = Math.floor(Math.random() * n), tmp = arr[--n], arr[n] = arr[i], arr[i] = tmp);
+              arr = arr.slice(0, random_count);
+              var html = '<ul>';
+            
+              for(var j=0;j<arr.length;j++){
+                var item=arr[j];
+                html += '<li><strong>' + 
+                item.date + ':&nbsp;&nbsp;<a href="' + (site.BASE_URI+item.uri) + '">' + 
+                (item.title || item.uri) + '</a></strong>';
+                if(item.excerpt){
+                  html +='<div class="post-excerpt">'+item.excerpt+'</div>';
+                }
+                html +='</li>';
+                
+              }
+              $(obj).html(html + '</ul>');
+          }
+          $('.random_posts_ul').each(function () {
+              var c = this;
+              if (!site.posts || !site.posts.length){
+                  $.getJSON(site.BASE_URI + 'js/posts.js',function(json){site.posts = json;load_random_posts(c)});
+              } 
+               else{
+                load_random_posts(c);
+              }
+          });
+      </script>
+    </div>
+  </div>
+
+    
+  
 </article>
  
-
-
+     
+  <div class="comments" id="comments">
+    
+     
+       
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+       
+            <div id="SOHUCS" sid="about/index.html"> </div>
+    
+      
+      
+  </div>
+ 
   
 
 </section>
@@ -115,85 +173,32 @@
     <aside id="sidebar">
   
     
-  <div class="widget-wrap">
-     
-        <h3 class="follow-title ">Follow me</h3>
-     
-    <div class="widget follow">
+
+  
+    
+    <div class="widget-wrap">
+    
+      <div class="widget" id="toc-widget-fixed">
       
-              <a class="github" aria-hidden="true" href="https://github.com/htmlzj" target="_blank" title="Github"></a>
-      
-      
-            <a class="weibo" aria-hidden="true" href="https://weibo.com/u/5101241860?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" target="_blank" title="微博"></a>
-      
-      
-              <a class="zhihu" aria-hidden="true" href="http://www.zhihu.com/people/" target="_blank" title="知乎"></a>
-      
-      
-            <a class="email" aria-hidden="true" href="mailto:941628696@qq.com" target="_blank" title="邮箱"></a>
-      
+        <strong class="toc-title">文章目录</strong>
+        <div class="toc-widget-list">
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一个普通人"><span class="toc-number">1.</span> <span class="toc-text">一个普通人</span></a></li></ol>
+          </div>
+      </div>
     </div>
-  </div>
 
+  
+    
 
   
     
   
     
+  
+    
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title tagcloud">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/第一天-首发/" style="font-size: 14px;">第一天 首发</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title recent-posts">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/12/05/post/">凛冬将至，希望能发光温暖世界</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title archive">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-<div class="widget-wrap">
-    <h3 class="widget-title">Links</h3>
-    <div class="widget">
-        <ul>
-            
-            <li>
-                <a href="http://blog.giscafer.com">giscafer&#39;s blog</a>
-            </li>
-            
-            <li>
-                <a href="http://www.gis520.com">GIS520社区</a>
-            </li>
-            
-        </ul>
-    </div>
-</div>
-
   
 </aside>
 
