@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何使用破解无线网络密码(工具篇)]]></title>
+    <url>%2F2018%2F12%2F11%2F4wifi%2F</url>
+    <content type="text"><![CDATA[工欲善其事必先利其器，做事之前工具得准备好以下20个免费wifi破解密码抓包工具献给大家 1. AircrackAircrack是目前最流行的WiFi密码破解工具。市面上能破解 WiFi加密的工具有很多，不外乎利用WEP安全漏洞或者暴力字典攻击的方式破解WPA/WPA2 PSK密码。WPA2 AES/CCMP加密依然是相对安全的选择。如果采用WPA2 PSK模式，那么你的密码长度最好是13位以上混合字符。在你的Wi-Fi网络被入侵或者“蹭网”之前，最好先用破解工具自我攻击一下。 Aircrack是一个开源的WEP/WPA/WPA2 PSK破解工具，可以运行在windows、Mac OS X、Linux和OpenBSD上。可以下载到Vmware镜像文件或Live CD文件。 下载链接: http://www.aircrack-ng.org/ 2. AirSnortAirSnort是另外一款流行的WLAN密码破解工具，可以破解WEP秘钥。 下载链接: http://sourceforge.net/projects/airsnort/ 3. KismetKismet是一个开源的WiFi扫描器，包嗅探器和入侵政策系统，可以在windows、Mac OSX、Linux和BSD上运行。Kismet能显示AP详细信息，包括隐藏的SSID，还能捕获原始无线数据包，还可以将数据导入 Wireshark、TCPdump等工具进行分析。在windows环境，受驱动程序限制，Kismet只能与 CACE AirPcap无线网卡配合工作。但在Mac OSX和Linux上，Kismet可以兼容很多无线网卡。 Download Kismet: http://www.kismetwireless.net/download.shtml 4. Cain &amp; AbleCain和Abel是windows上的密码恢复、破解和嗅探工具，可被用于展示如何从网络中嗅探明文密码。 下载链接: http://www.oxid.it/cain.html 5. WireSharkWireShark是当下非常流行的网络协议分析工具，关于最新的WireShark2.0版本的新功能的信息在这里。 Download Wireshark: https://www.wireshark.org/ 6. Fern WiFi Wireless CrackerFern是一款优秀的网络漏洞扫描和WLAN破解工具，可以破解获取WEP/WPA/WPS秘钥。Fren的开发工作从未停顿，而且专业版还提供更多强大功能。 下载链接: http://www.fern-pro.com/downloads.php 7. CoWPAttyCoWPAtty也是一款无线密码破解工具，新版预置了包含上千个流行SSID的17万个字典文件，大大提高了破解速度，类似国内的各种WiFi钥匙应用。 下载链接: http://sourceforge.net/projects/cowpatty/ 8. AirjackAirjack是802.11包注入工具，过去曾被用来发起DOS或中间人攻击。 下载链接: http://sourceforge.net/projects/airjack/ 9. WepAttack顾名思义，WepAttack也是一个802.11WEP秘钥破解工具，同时也是一个开源的Linux工具。 下载链接: http://wepattack.sourceforge.net/ 10. NetStumblerNetStumbler是一个运行于Windows平台的无线密码破解工具。该工具已经很久未更新，无法兼容64位Windows版本，而且会被大多数无线入侵侦测工具发现，因此适合在家练手使用。 下载链接: http://www.stumbler.net/ 11. inSSIDerinSSIDer是Windows和Mac平台上最流行的WiFi扫描工具，曾荣获最佳开源网络软件称号，不过目前已经转为收费版本（19.99美元） 下载链接: http://www.inssider.com/ 12. Wifiphisher开源无线安全工具Wifiphisher能够对WPA加密的AP无线热点实施自动化钓鱼攻击，获取密码账户。由于利用了社工原理实施中间人攻击，Wifiphisher在实施攻击时无需进行暴力破解。 WiFiphiser是基于MIT许可模式的开源软件，运行于Kali Linux之上。 下载链接：https://github.com/sophron/wifiphisher 13. KisMac一个类似Kismet的工具，面向Mac平台。 下载链接:http://kismac-ng.org/ 14. Reaver如果你使用的是无线路由器，那么你需要注意去年底发现的一个安全漏洞：很多路由器厂商提供的WPS（一键认证模式，方便用户完成路由器设备连接认证）的PIN码可以在数小时内被破解。Reaver就是这样一个工具，Reaver是一个Linux程序，能在4-10小时内暴力破解无线路由器的WPS PIN码和WPA/WPA2 PSK密码。Reaver还提供一个方便使用的专用硬件方案：Reaver Pro，有图形web操作界面。 下载链接:https://code.google.com/p/reaver-wps/downloads/list 15. WifiteWifite是一个很不错的无线密码破解工具，支持通过Reaver破解WPS秘钥，运行于Linux平台。 下载链接: https://github.com/derv82/wifite 16. WepDecryptWepDecrypt是一款适合初学者的无线密码字典攻击工具，用C语言写成，但很久没有更新了。 下载链接:http://wepdecrypt.sourceforge.net/wepdecrypt-manual.html 17. OmniPeekOmniPeek是一款网络包嗅探分析工具，属于Windows平台“独占”工具。需要使用者对网络协议和数据包有较深入的了解。 下载地址：http://www.wildpackets.com/products/distributed_network_analysis/omnipeek_network_analyzer 18. CloudCracker顾名思义，CloudCracker是一款云端WiFi密码破解工具。 下载地址: https://www.cloudcracker.com/ 19. CommonView for Wi-FiCommonView是一款流行的额网络监控和包分析工具，最大特点是拥有GUI图形界面。 下载地址：http://www.tamos.com/products/commwifi/ 20. PyritPyrit也是一款优秀的WiFi密码暴力破解工具（WPA/WPA2-PSK）。运行于FreeBSD、MacOS和Linux平台。 下载地址：https://code.google.com/p/pyrit/ 想知道如何破解wifi密码，且见下回分解]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>wifi破解</tag>
+        <tag>wifi入侵</tag>
+        <tag>渗透wifi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SS和SSR操作指南]]></title>
     <url>%2F2018%2F12%2F08%2F3SS%E5%92%8CSSR%2F</url>
     <content type="text"><![CDATA[先上干货，各平台ss,ssr下载链接附上 Windows下载地址ss-4.1.1ssr-4.9.0 Macbook下载地址ssx-2.6.3ssr-1.7.0 iPhone/iPadNot available in China Appstore.Try to switch Canada regions.需要注册国外app商店App1（free）App2（$0.99）App3（$2.99） AndroidSS-4.6.1 SSR-3.4.0.8 免费ss/免费SSR通过app扫二维码或者复制代码导入配置白嫖机场1白嫖机场2（包含多个机场）]]></content>
