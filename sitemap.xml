@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/404.html</loc>
+    
+    <lastmod>2018-12-12T08:14:09.691Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/12/11/4wifi/</loc>
     
-    <lastmod>2018-12-11T08:31:51.587Z</lastmod>
+    <lastmod>2018-12-11T08:34:21.316Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2018-12-06T04:37:12.863Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/404.html</loc>
-    
-    <lastmod>2018-12-06T04:34:31.574Z</lastmod>
     
   </url>
   
