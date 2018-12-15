@@ -1,0 +1,7 @@
+.swiper-slide img:not(.keep){
+    top: 7vh;
+    }
+img.gif1,img.gif2,img.gif3{
+    top: 0;
+
+}
